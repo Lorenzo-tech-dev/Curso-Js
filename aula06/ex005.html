@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    body {
+        background-color: black;
+        color: white;
+        font: normal 10pt Arial;
+    }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>      
+    <p>Aqui vai o resultado </p>
+    <p>Aprendendo a usar o <strong>DOM</stronge> em JavaScript.</p>  
+    <div id = "msg" >Clique em mim</div>   
+    <div class = "lolo"> Lucas Souza </div> 
+    
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Esta escrito assim: ' + p1.innerText) //serve para mudar o hrml aqui no script.
+        p1.style.color = 'red'//serve para mudar a cor do hrml aqui no script.
+        var corpo = window.document.body //serve para mudar a cor do background aqui no script.
+        corpo.style.background = 'black' //aqui muda a cor!
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'blue' 
+     /*OBSERVAÇÃO: Usar sempre que possivel o Selector para nâo ter muita 
+     dor de cabeça3*/
+       var lolo = window.document.querySelector('div.lolo')
+       lolo.style.color = 'green'
+       
+    </script>
+</body>
+</html>
