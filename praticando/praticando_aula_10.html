@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicando 2 valores: </title>
+    <style>
+        body{
+            background-color: cadetblue;
+            color:darkred;
+            font: normal 13pt Arial;
+            }
+            input {
+            font: normal 13pt Arial;
+            width: 80px;
+        }
+        div#res {
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multiplicando 2 valores: </h1>>
+    <input type="number" name="valor1" id="valor1"> X
+    <input type="number" name="valor2" id="valor2">
+    <input type="button" value="Multiplicar" onclick="multiplicar()">
+     <div id = 'resp' >Resultado: </div>
+     <script>
+         function multiplicar(){
+             var n1 = window.document.querySelector('input#valor1')
+             var n2 = window.document.querySelector('input#valor2')
+             var res = window.document.getElementById('resp')
+             var nu1 = Number(n1.value)
+             var nu2 = Number(n2.value)
+             var s = nu1 * nu2
+             resp.innerHTML = `O resultado de ${nu1} vezes ${nu2} é igual a <strong>${s}<strong>. `
+         }
+     </script>
+</body>
+</html>
